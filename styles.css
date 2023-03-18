@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #191825;
+    font-family: monospace;
+    line-height: 1.5;
+    max-width: 80%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    height: 90vh;
+}
+
+.big-heading {
+    margin: 100px auto;
+}
+
+.blink {
+    font-weight: bold;
+    font-size: 7.5rem;
+    display: block;
+    animation: blink-animation 2s steps(5, start) infinite;
+    -webkit-animation: blink-animation 2s steps(5, start) infinite;
+  }
+@keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+}
+@-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+}
+
+.typewriter {
+    margin-top: 75px;
+}
+
+.typewriter > p {
+    font-size: 1.25rem;
+    overflow: hidden;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.typewriter > p::after {
+    content: "";
+    display: inline-block;
+	margin-left: 2px;
+	height: 25px;
+    animation: cursor .6s infinite;
+    border-right: 2px solid;
+}
+
+@keyframes cursor {
+    0% { opacity: 1; }
+    49% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.name {
+    font-weight: 600;
+}
+
+  /* Portfolio Section */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+  
+.column {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 5px;
+}
+
+
+.heading {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.portfolio-section {
+    text-align: left;
+    padding: 40px 0;
+}
+
+.content > p {
+    font-size: 1rem;
+}
+
+.portfolio-section > a {
+    font-weight: bold;
+}
+
+a {
+    font-size: 1rem;
+    color: #191825;
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #191825;
+}
+
+.site {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+  
+
+/* About Section */
+
+.about-section {
+    padding: 40px 0;
+}
+
+.about-content {
+    font-size: 1rem;
+}
+
+.learning {
+    text-decoration: underline;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #191825;
+    margin: 10px 0;
+}
+
+button > a {
+    color: #fff;
+}
+
+button > a:hover {
+    text-decoration: none;
+}
+
+button:hover {
+    transform: translate(1px, 1px);
+}
+
+/* Contact Section */
+
+.contact-section {
+    padding: 40px 0;
+} 
+
+.email {
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+/* Footer Section */
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer > a {
+    font-size: 1.2rem;
+    padding: 0 15px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+    body {
+        max-width: 85%;
+    }
+}
+  
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    body {
+        max-width: 95%;
+    }
+    .blink {
+        font-size: 6rem;
+    }
+    
+}
