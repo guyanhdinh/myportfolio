@@ -69,7 +69,7 @@ header {
     font-weight: 600;
 }
 
-  /* Portfolio Section */
+/* Portfolio Section */
 
 .row {
     display: flex;
@@ -82,7 +82,6 @@ header {
     max-width: 33.33%;
     padding: 5px;
 }
-
 
 .heading {
     text-align: left;
@@ -104,23 +103,21 @@ header {
 }
 
 a {
-    font-size: 1rem;
     color: #191825;
     text-decoration: none;
 }
-
 
 a:hover {
     text-decoration: underline;
     text-decoration-color: #191825;
 }
 
-.site {
+.site-link {
     font-size: 1.2rem;
     font-weight: 400;
+    margin-right: 50px;
 }
   
-
 /* About Section */
 
 .about-section {
@@ -202,5 +199,4 @@ footer > a {
     .blink {
         font-size: 6rem;
     }
-    
 }
